@@ -1,0 +1,14 @@
+1. anaconda 설치
+
+아래 명령어로 32bit로 만든 뒤 가상환경 만들어야 32bit로 설치됨
+set CONDA_FORCE_32BIT=1
+conda config --env --set subdir win-32
+
+conda create -n systrading python=3.8
+
+되돌리기
+conda config --env --set subdir win-64
+set CONDA_FORCE_64BIT=1
+
+
+
